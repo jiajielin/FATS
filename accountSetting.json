@@ -1,0 +1,13 @@
+{
+	"brokerID": "0292",
+	"userID": "0000000279",
+	"password": "123456",
+
+	"tdAddress": "tcp://222.240.130.30:41205",
+	"mdAddress": "tcp://222.240.130.30:41213",
+
+	"product": "demo",
+
+	"strategyFile": "strategyTemplate",
+	"strategyClass": "StrategyTemplate"
+}

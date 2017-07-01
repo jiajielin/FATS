@@ -1,0 +1,153 @@
+# coding=utf-8
+
+"""
+Time : 2017/1/23 11:01
+Author : Jia Jielin
+Company:
+File : fhConstant.py
+Description:
+
+"""
+
+# system module
+
+# third party module
+
+# own module
+
+
+# 任务状态
+STATUS_NOTTRADED = '未成交'
+STATUS_PARTTRADED = '部分成交'
+STATUS_ALLTRADED = '已成交'
+STATUS_CANCELLED = '已撤销'
+STATUS_UNKNOWN = '未知'
+# STATUS_PARTCANCELLED = '部分成交并撤销'
+# STATUS_TRADEDCANCELLED = '全部成交并撤销'
+
+# 状态操作
+OPTION_CANCEL = 'optionCancel'
+OPTION_TRADED = 'optionTraded'
+# OPTION_PARTTRADED = 'optionPartTraded'
+OPTION_NOTTRADED = 'optionNotTraded'
+OPTION_REVOKECANCEL = 'optionRevokeCancel'
+
+# 交易所类型
+EXCHANGE_SSE = 'SE'        # 上交所
+EXCHANGE_SZSE = 'SZ'      # 深交所
+EXCHANGE_CFFEX = 'CFE'    # 中金所
+EXCHANGE_SHFE = 'SHFE'      # 上期所
+EXCHANGE_CZCE = 'CZCE'      # 郑商所
+EXCHANGE_DCE = 'DCE'        # 大商所
+EXCHANGE_SGE = 'SGE'        # 上金所
+EXCHANGE_INE = 'INE'        # 不知道哪个交易所
+EXCHANGE_UNKNOWN = 'UNKNOWN'# 未知交易所
+EXCHANGE_NONE = ''          # 空交易所
+# EXCHANGE_HKEX = 'HKEX'      # 港交所
+
+# 中文字段
+POSITION_ON = '开仓'
+POSITION_OFF = '平仓'
+TRADE_BUY = '买入'
+TRADE_SELL = '卖出'
+DIRECTION_LONG = '多'
+DIRECTION_SHORT = '空'
+
+# 默认空值
+EMPTY_STRING = ''
+EMPTY_INT = 0
+EMPTY_UNICODE = u''
+EMPTY_FLOAT = 0.0
+
+# 数据库插入数值限制
+DB_VOLUME_MAX = 2147483647
+DB_PRICE_PREC = 4
+DB_PRICE_LONGTH = 8
+
+# 用户验证结果/相关人员权限
+VERIFY_NOUSER = 999
+VERIFY_ADMIN = 0
+VERIFY_FUNDMANAGER = 1
+VERIFY_TRADER = 2
+VERIFY_DATAMANAGER = 3
+VERIFY_INVESTMANAGER = 4
+
+VERIFY_COMMENT = {}
+VERIFY_COMMENT[VERIFY_ADMIN] = '管理员'
+VERIFY_COMMENT[VERIFY_FUNDMANAGER] = '基金经理'
+VERIFY_COMMENT[VERIFY_TRADER] = '交易员'
+VERIFY_COMMENT[VERIFY_DATAMANAGER] = '数据管理员'
+VERIFY_COMMENT[VERIFY_NOUSER] = '游客'
+VERIFY_COMMENT[None] = '非标准用户'
+VERIFY_COMMENT[VERIFY_INVESTMANAGER] = '投资总监'
+
+# 界面设置选项
+SETTING_DEFAUlT = u'默认'
+SETTING_MYSELF = u'护眼'
+
+# 数据库连接
+DB_DISCONNECT = 1000
+
+# 账户
+ACCOUNT_PAGE = '账户'
+PRODUCT_ON = '运作中'
+PRODUCT_OFF = '已结束'
+
+# 建议
+SUGGEST_HOLD = '持有'
+SUGGEST_BUY = '买入'
+SUGGEST_SELL = '卖出'
+
+PRODUCT_VIEW = 0
+PRODUCT_ADD = 1
+PRODUCT_MOD = 2
+PRODUCT_DELETE = 3
+
+# 布局相关数据
+TRADE_LEFT_MAX = 350
+TRADE_LEFT_MIN = 280
+
+LOG_RIGHT_MAX = 300
+LOG_RIGHT_MIN = 200
+
+# 股票交易成本
+SEC_BUY_COST = 0.0003
+SEC_SELL_COST = 0.0013
+
+# 价格类型常量
+PRICETYPE_LIMITPRICE = u'限价'
+PRICETYPE_MARKETPRICE = u'市价'
+PRICETYPE_FAK = u'FAK'
+PRICETYPE_FOK = u'FOK'
+
+# 方向常量
+DIRECTION_NONE = u'无方向'
+DIRECTION_LONG = u'多'
+DIRECTION_SHORT = u'空'
+DIRECTION_UNKNOWN = u'未知'
+DIRECTION_NET = u'净'
+DIRECTION_SELL = u'卖出'      # IB接口
+
+# 开平常量
+OFFSET_NONE = u'无开平'
+OFFSET_OPEN = u'开仓'
+OFFSET_CLOSE = u'平仓'
+OFFSET_CLOSETODAY = u'平今'
+OFFSET_CLOSEYESTERDAY = u'平昨'
+OFFSET_UNKNOWN = u'未知'
+
+# 合约类型常量
+PRODUCT_EQUITY = u'股票'
+PRODUCT_FUTURES = u'期货'
+PRODUCT_OPTION = u'期权'
+PRODUCT_INDEX = u'指数'
+PRODUCT_COMBINATION = u'组合'
+PRODUCT_FOREX = u'外汇'
+PRODUCT_UNKNOWN = u'未知'
+PRODUCT_SPOT = u'现货'
+PRODUCT_DEFER = u'延期'
+PRODUCT_NONE = ''
+
+# 期权类型
+OPTION_CALL = u'看涨期权'
+OPTION_PUT = u'看跌期权'
